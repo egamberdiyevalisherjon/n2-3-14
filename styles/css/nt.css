@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 50px;
+}
+
+.note {
+  width: 300px;
+  min-height: 300px;
+  background-color: #ff0;
+  padding: 1rem;
+  position: fixed;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1333333333);
+}/*# sourceMappingURL=nt.css.map */

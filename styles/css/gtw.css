@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+
+.word {
+  display: flex;
+  gap: 1em;
+  margin: 10rem 0;
+  justify-content: center;
+}
+.word span.letter {
+  width: 100px;
+  height: 100px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 3px solid blue;
+  padding-bottom: 0.5em;
+}
+.word span.letter:empty {
+  border-bottom-color: #000;
+}
+
+.abc {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  gap: 2rem;
+}
+.abc .letter {
+  width: 70px;
+  height: 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: grey;
+  text-transform: uppercase;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.abc .letter.clicked {
+  background: green;
+}
+
+.alert {
+  padding: 0.4em 1.2em;
+  background: white;
+  color: green;
+  border: 1px solid green;
+  border-radius: 5px;
+  transition: 0.3s all ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.alerts {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.alert.show {
+  opacity: 1;
+  visibility: visible;
+}/*# sourceMappingURL=gtw.css.map */
